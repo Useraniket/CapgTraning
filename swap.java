@@ -1,13 +1,17 @@
-public class swap
-{
- public static void main(String[] args) {
-	int a=10;
-	int b=20;
-	int temp=a;
-	a=b;
-	b=temp;
-	System.out.println("The First number is"+a);
-	System.out.println("The Second number is"+b);
-	
+import java.util.Scanner;
+
+public class reverse {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the number:");
+	int n=sc.nextInt();
+	int result=0;
+	while(n>0)
+	{
+		int rem=n%10;
+		result=result*10+rem;
+		n=n/10;
+	}
+	System.out.println(result);
 }
 }
