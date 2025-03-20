@@ -1,13 +1,16 @@
 import java.util.Scanner;
 
-public class reverse {
+public class ifElse {
 public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);
-	System.out.println("Enter the number:");
-	int n=sc.nextInt();
-	for(int i=n-1;i>0;i--)
-         {
-	System.out.println(i);
-        }
+	System.out.println("enter the name");
+	String st=sc.nextLine();
+	int money=sc.nextInt();
+	
+	if(money>50)
+	{
+		System.out.println(st+"will get"+"chocolate");
+	}
+	sc.close();
 }
 }
