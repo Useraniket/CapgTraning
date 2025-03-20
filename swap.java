@@ -1,34 +1,15 @@
 import java.util.Scanner;
-
-public class palindrome
-{
-public static boolean checkPalindrome(int n)
-{
-	
-	int temp=n;
-	int sum=0;
-	boolean b;
-	while(n!=0)
-	{
-		int rem=n%10;
-		sum+=rem;
-		n=n/10;
-	}
-	if(temp==sum)
-	{
-		b=true;
-	}
-	else
-	{
-		b=false;
-	}
-	return b;
-
-
+public class ifElse {
 public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);
-	System.out.println("Enter the number:");
-	int n=sc.nextInt();
-	System.out.println(checkPalindrome(n));
+	System.out.println("enter the name");
+	String st=sc.nextLine();
+	int money=sc.nextInt();
+	
+	if(money>50)
+	{
+		System.out.println(st+"will get"+"chocolate");
+	}
+	sc.close();
 }
 }
