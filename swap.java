@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class palindrome
 {
 public static boolean checkPalindrome(int n)
@@ -22,7 +23,7 @@ public static boolean checkPalindrome(int n)
 		b=false;
 	}
 	return b;
-}
+
 
 public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);
